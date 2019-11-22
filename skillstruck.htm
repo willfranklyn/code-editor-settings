@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:8000/student/code/ -->
+<html class="light-mode bs-grid-xl" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <style data-tippy-stylesheet="">.tippy-tooltip[data-animation=fade][data-state=hidden]{opacity:0}.tippy-iOS{cursor:pointer!important;-webkit-tap-highlight-color:transparent}.tippy-popper{pointer-events:none;max-width:calc(100vw - 10px);transition-timing-function:cubic-bezier(.165,.84,.44,1);transition-property:transform}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;background-color:#333;transition-property:visibility,opacity,transform;outline:0}.tippy-tooltip[data-placement^=top]>.tippy-arrow{border-width:8px 8px 0;border-top-color:#333;margin:0 3px;transform-origin:50% 0;bottom:-7px}.tippy-tooltip[data-placement^=bottom]>.tippy-arrow{border-width:0 8px 8px;border-bottom-color:#333;margin:0 3px;transform-origin:50% 7px;top:-7px}.tippy-tooltip[data-placement^=left]>.tippy-arrow{border-width:8px 0 8px 8px;border-left-color:#333;margin:3px 0;transform-origin:0 50%;right:-7px}.tippy-tooltip[data-placement^=right]>.tippy-arrow{border-width:8px 8px 8px 0;border-right-color:#333;margin:3px 0;transform-origin:7px 50%;left:-7px}.tippy-tooltip[data-interactive][data-state=visible]{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{position:absolute;border-color:transparent;border-style:solid}.tippy-content{padding:5px 9px}</style><link rel="icon" href="http://localhost:8000/static/homepage/media/img/Icons/favicon.png">
+        <link rel="stylesheet" href="./skillstruck_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./skillstruck_files/main.css">
+        <link rel="stylesheet" href="./skillstruck_files/icon">
+        <link rel="stylesheet" href="./skillstruck_files/css">
+        <!-- <script type="text/javascript" async="" src="./skillstruck_files/f.txt"></script><script type="text/javascript" async="" src="./skillstruck_files/analytics.js"></script><script async="" src="./skillstruck_files/gtm.js"></script><script async="" src="./skillstruck_files/js"></script> -->
+        
+<!-- <script src="./skillstruck_files/f725a672fb.js"></script><link rel="stylesheet" href="./skillstruck_files/pro.min.css" media="all"><link rel="stylesheet" href="./skillstruck_files/pro-v4-font-face.min.css" media="all"><link rel="stylesheet" href="./skillstruck_files/pro-v4-shims.min.css" media="all"> -->
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/codemirror.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/multipane.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/hamburgers.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/editor.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/curriculum.css">
+<link rel="stylesheet" href="./skillstruck_files/shepherd-theme-arrows-fix.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/shift-away.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/light.css">
+<link type="text/css" rel="stylesheet" href="./skillstruck_files/svg-arrow.css">
+<style>
+    .codex-editor--narrow .codex-editor__redactor {
+        margin-right: 0px !important;
+    }
+    .ce-block--focused {
+        background: none !important;
+    }
+    .tippy-tooltip.skillstruck-theme {
+        background-color: #54a0b3;
+        color: white;
+    }
+    .tippy-tooltip.skillstruck-theme .tippy-svg-arrow {
+        fill: #54a0b3;
+    }
+</style>
+
+        <style>
+            @media (min-width: 576px) {
+                .right-nav.open {
+                        padding: 1rem !important;
+                        right: 14px;
+                        background: white !important;
+                        width: 238px;
+                }
+            }
+        </style>
+        <title>
+            Skill Struck — Code
+        </title>
+    <style type="text/css">.cdx-attaches--with-file {
+    display: flex;
+    padding: 13px 20px;
+    border: 1px solid #e6e9eb;
+    border-radius: 3px;
+    background: #fff;
+  }
+
+    .cdx-attaches--with-file .cdx-attaches__file-info {
+      flex-grow: 8;
+      max-width: calc(100% - 80px);
+    }
+
+    .cdx-attaches--with-file .cdx-attaches__download-button {
+      display: flex;
+      align-items: center;
+    }
+
+    .cdx-attaches--with-file .cdx-attaches__download-button svg {
+        fill: #7b7e89;
+      }
+
+    .cdx-attaches--with-file .cdx-attaches__file-icon {
+      margin-right: 20px;
+      position: relative;
+    }
+
+    .cdx-attaches--with-file .cdx-attaches__file-icon::before {
+        position: absolute;
+        bottom: 7px;
+        left: 8.5px;
+        font-size: 8px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: #fff;
+        line-height: 150%;
+        content: attr(data-extension);
+      }
+
+    .cdx-attaches--with-file .cdx-attaches__file-icon svg {
+        fill: currentColor;
+      }
+
+    .cdx-attaches--with-file .cdx-attaches__size {
+      color: #7b7e89;
+    }
+
+    .cdx-attaches--with-file .cdx-attaches__size::after {
+        content: attr(data-size);
+        margin-left: 0.2em;
+      }
+
+    .cdx-attaches--with-file .cdx-attaches__title {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      outline: none;
+      max-width: 90%;
+    }
+  .cdx-attaches--loading .cdx-attaches__title,
+    .cdx-attaches--loading .cdx-attaches__file-icon,
+    .cdx-attaches--loading .cdx-attaches__size,
+    .cdx-attaches--loading .cdx-attaches__download-button,
+    .cdx-attaches--loading .cdx-attaches__button {
+      opacity: 0;
+      font-size: 0;
+    }
+  .cdx-attaches__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cdx-attaches__button svg {
+      height: 14px;
+      margin-top: 0;
+      margin-right: 8px;
+    }
+  .cdx-attaches__button:hover {
+      color: #393f52;
+    }
+</style><style type="text/css">.cdx-checklist__item {
+        display: flex;
+        padding: 0 10px;
+        box-sizing: content-box;
+    }
+
+        .cdx-checklist__item-text {
+            outline: none;
+            flex-grow: 1;
+            padding: 10px 0;
+        }
+
+        .cdx-checklist__item-checkbox {
+            display: inline-block;
+            flex-shrink: 0;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin: 10px 10px 10px 0;
+            border-radius: 50%;
+            border: 1px solid #d0d0d0;
+            background: #fff;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .cdx-checklist__item-checkbox:hover {
+                border-color: #b5b5b5;
+            }
+
+        .cdx-checklist__item-checkbox::after {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 8px;
+                height: 5px;
+                border: 2px solid #fcfff4;
+                border-top: none;
+                border-right: none;
+                background: transparent;
+                content: '';
+                opacity: 0;
+                transform: rotate(-45deg);
+            }
+
+        .cdx-checklist__item--checked .cdx-checklist__item-checkbox {
+                background: #388ae5;
+                border-color: #388ae5;
+            }
+
+        .cdx-checklist__item--checked .cdx-checklist__item-checkbox:hover {
+                    background: #307cd1;
+                }
+
+        .cdx-checklist__item--checked .cdx-checklist__item-checkbox::after {
+                    opacity: 1;
+                }
+</style><style type="text/css">.ce-code__textarea {
+    min-height: 200px;
+    font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+    color: #41314e;
+    line-height: 1.6em;
+    font-size: 12px;
+    background: #f8f7fa;
+    border: 1px solid #f1f1f4;
+    box-shadow: none;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    resize: vertical;
+}
+</style><style type="text/css">.ce-delimiter {
+    line-height: 1.6em;
+    width: 100%;
+    text-align: center;
+}
+
+.ce-delimiter:before {
+    display: inline-block;
+    content: "***";
+    font-size: 30px;
+    line-height: 65px;
+    height: 30px;
+    letter-spacing: 0.2em;
+}</style><style type="text/css">.embed-tool--loading .embed-tool__caption {
+      display: none;
+    }
+
+    .embed-tool--loading .embed-tool__preloader {
+      display: block;
+    }
+
+    .embed-tool--loading .embed-tool__content {
+      display: none;
+    }
+  .embed-tool__preloader {
+    display: none;
+    position: relative;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e6e9eb;
+  }
+  .embed-tool__preloader::before {
+      content: '';
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      margin-top: -25px;
+      margin-left: -15px;
+      border-radius: 50%;
+      border: 2px solid #cdd1e0;
+      border-top-color: #388ae5;
+      box-sizing: border-box;
+      animation: embed-preloader-spin 2s infinite linear;
+    }
+  .embed-tool__url {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 250px;
+    color: #7b7e89;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .embed-tool__caption {
+    margin-top: 7px;
+  }
+  .embed-tool__caption[contentEditable=true][data-placeholder]::before{
+      position: absolute;
+      content: attr(data-placeholder);
+      color: #707684;
+      font-weight: normal;
+      opacity: 0;
+    }
+  .embed-tool__caption[contentEditable=true][data-placeholder]:empty::before {
+         opacity: 1;
+      }
+  .embed-tool__caption[contentEditable=true][data-placeholder]:empty:focus::before {
+        opacity: 0;
+      }
+
+@keyframes embed-preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style><style type="text/css">/**
+ * Plugin styles
+ */
+.ce-header {
+  padding: 1em 0;
+  margin: 0;
+  margin-bottom: -0.9em;
+  line-height: 1.5em;
+  outline: none;
+}
+
+.ce-header p,
+.ce-header div{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/**
+ * Styles for Plugin icon in Toolbar
+ */
+.ce-header__icon {}
+
+.ce-header[contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.ce-header[contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.ce-header[contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+</style><style type="text/css">.image-tool {
+  --bg-color: #CDD1E0;
+  --front-color: #388AE5;
+  --border-color: #E8E8EB;
+}
+
+  .image-tool__image {
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .image-tool__image-picture {
+      max-width: 100%;
+      vertical-align: bottom;
+      display: block;
+    }
+
+  .image-tool__image-preloader {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-size: cover;
+      margin: auto;
+      position: relative;
+      background-color: var(--bg-color);
+      background-position: center center;
+    }
+
+  .image-tool__image-preloader::after {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid var(--bg-color);
+        border-top-color: var(--front-color);
+        left: 50%;
+        top: 50%;
+        margin-top: -30px;
+        margin-left: -30px;
+        animation: image-preloader-spin 2s infinite linear;
+        box-sizing: border-box;
+      }
+
+  .image-tool__caption[contentEditable=true][data-placeholder]::before{
+      position: absolute;
+      content: attr(data-placeholder);
+      color: #707684;
+      font-weight: normal;
+      opacity: 0;
+    }
+
+  .image-tool__caption[contentEditable=true][data-placeholder]:empty::before {
+        opacity: 1;
+      }
+
+  .image-tool__caption[contentEditable=true][data-placeholder]:empty:focus::before {
+         opacity: 0;
+      }
+
+  .image-tool--empty .image-tool__image {
+      display: none;
+    }
+
+  .image-tool--empty .image-tool__caption, .image-tool--loading .image-tool__caption {
+      display: none;
+    }
+
+  .image-tool--filled .cdx-button {
+      display: none;
+    }
+
+  .image-tool--filled .image-tool__image-preloader {
+        display: none;
+      }
+
+  .image-tool--loading .image-tool__image {
+      min-height: 200px;
+      display: flex;
+      border: 1px solid var(--border-color);
+      background-color: #fff;
+    }
+
+  .image-tool--loading .image-tool__image-picture {
+        display: none;
+      }
+
+  .image-tool--loading .cdx-button {
+      display: none;
+    }
+
+  /**
+   * Tunes
+   * ----------------
+   */
+
+  .image-tool--withBorder .image-tool__image {
+      border: 1px solid var(--border-color);
+    }
+
+  .image-tool--withBackground .image-tool__image {
+      padding: 15px;
+      background: var(--bg-color);
+    }
+
+  .image-tool--withBackground .image-tool__image-picture {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+
+  .image-tool--stretched .image-tool__image-picture {
+        width: 100%;
+      }
+
+@keyframes image-preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style><style type="text/css">.inline-code {
+  background: rgba(251,241,241,0.78);
+  color: #C44545;
+  padding: 4px 6px;
+  border-radius: 2px;
+  margin: 0 2px;
+  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+  font-size: 0.9em;
+}
+</style><style type="text/css">.link-tool {
+  position: relative;
+}
+
+  .link-tool__input {
+    padding-left: 38px;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.567 13.629c.728.464 1.581.65 2.41.558l-.873.873A3.722 3.722 0 1 1 4.84 9.794L6.694 7.94a3.722 3.722 0 0 1 5.256-.008L10.484 9.4a5.209 5.209 0 0 1-.017.016 1.625 1.625 0 0 0-2.29.009l-1.854 1.854a1.626 1.626 0 0 0 2.244 2.35zm2.766-7.358a3.722 3.722 0 0 0-2.41-.558l.873-.873a3.722 3.722 0 1 1 5.264 5.266l-1.854 1.854a3.722 3.722 0 0 1-5.256.008L9.416 10.5a5.2 5.2 0 0 1 .017-.016 1.625 1.625 0 0 0 2.29-.009l1.854-1.854a1.626 1.626 0 0 0-2.244-2.35z' fill='rgba(0, 0, 0, 0.6)' transform='translate(-3.667 -2.7)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .link-tool__input-holder {
+      position: relative;
+    }
+
+  .link-tool__input-holder--error .link-tool__input {
+          background-image: url("data:image/svg+xml,%3Csvg width='13' height='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.567 13.629c.728.464 1.581.65 2.41.558l-.873.873A3.722 3.722 0 1 1 4.84 9.794L6.694 7.94a3.722 3.722 0 0 1 5.256-.008L10.484 9.4a5.209 5.209 0 0 1-.017.016 1.625 1.625 0 0 0-2.29.009l-1.854 1.854a1.626 1.626 0 0 0 2.244 2.35zm2.766-7.358a3.722 3.722 0 0 0-2.41-.558l.873-.873a3.722 3.722 0 1 1 5.264 5.266l-1.854 1.854a3.722 3.722 0 0 1-5.256.008L9.416 10.5a5.2 5.2 0 0 1 .017-.016 1.625 1.625 0 0 0 2.29-.009l1.854-1.854a1.626 1.626 0 0 0-2.244-2.35z' fill='rgb(224, 147, 147)' transform='translate(-3.667 -2.7)'/%3E%3C/svg%3E%0A");
+          background-color: #fff3f6;
+          border-color: #f3e0e0;
+          color: #a95a5a;
+          box-shadow: inset 0 1px 3px 0 rgba(146, 62, 62, .05);
+        }
+
+  .link-tool__input[contentEditable=true][data-placeholder]::before{
+      position: absolute;
+      content: attr(data-placeholder);
+      color: #707684;
+      font-weight: normal;
+      opacity: 0;
+    }
+
+  .link-tool__input[contentEditable=true][data-placeholder]:empty::before {
+        opacity: 1;
+      }
+
+  .link-tool__input[contentEditable=true][data-placeholder]:empty:focus::before {
+         opacity: 0;
+       }
+
+  .link-tool__progress {
+    position: absolute;
+    box-shadow: inset 0 1px 3px 0 rgba(102, 85, 107, 0.04);
+    height: 100%;
+    width: 0;
+    background-color: #f4f5f7;
+    z-index: -1;
+  }
+
+  .link-tool__progress--loading {
+      -webkit-animation: progress 500ms ease-in;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+  .link-tool__progress--loaded {
+      width: 100%;
+    }
+
+  .link-tool__content {
+    display: block;
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px #fff;
+    color: initial !important;
+    text-decoration: none !important;
+  }
+
+  .link-tool__content::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+  .link-tool__content--rendered {
+      background: #fff;
+      border: 1px solid rgba(201, 201, 204, 0.48);
+      box-shadow: 0 1px 3px rgba(0,0,0, .1);
+      border-radius: 6px;
+      will-change: filter;
+      animation: link-in 450ms 1 cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+  .link-tool__content--rendered:hover {
+        box-shadow: 0 0 3px rgba(0,0,0, .16);
+      }
+
+  .link-tool__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 0 30px;
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+    float: right;
+  }
+
+  .link-tool__title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 0 0 10px 0;
+  }
+
+  .link-tool__title + .link-tool__anchor {
+      margin-top: 25px;
+    }
+
+  .link-tool__description {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    line-height: 1.55em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .link-tool__anchor {
+    display: block;
+    font-size: 15px;
+    line-height: 1em;
+    color: #888 !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+
+@keyframes link-in {
+  from {
+    filter: blur(5px);
+  }
+
+  to {
+    filter: none;
+  }
+}
+
+.codex-editor--narrow .link-tool__image {
+  display: none;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+</style><style type="text/css">.cdx-list {
+    margin: 0;
+    padding-left: 40px;
+    outline: none;
+}
+
+    .cdx-list__item {
+        padding: 5.5px 0 5.5px 3px;
+        line-height: 1.6em;
+    }
+
+    .cdx-list--unordered {
+        list-style: disc;
+    }
+
+    .cdx-list--ordered {
+        list-style: decimal;
+    }
+
+    .cdx-list-settings {
+        display: flex;
+    }
+
+    .cdx-list-settings .cdx-settings-button {
+            width: 50%;
+        }
+</style><style type="text/css">.cdx-marker {
+  background: rgba(245,235,111,0.29);
+  padding: 3px 0;
+}</style><style type="text/css">.ce-paragraph {
+    line-height: 1.6em;
+    outline: none;
+}
+
+.ce-paragraph[data-placeholder]:empty::before{
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+/** Show placeholder at the first paragraph if Editor is empty */
+.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.codex-editor--toolbox-opened .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before,
+.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+.ce-paragraph p:first-of-type{
+    margin-top: 0;
+}
+
+.ce-paragraph p:last-of-type{
+    margin-bottom: 0;
+}
+</style><style type="text/css">.cdx-personality {
+    padding: 30px;
+    margin: 0.7em 0;
+    border: 1px solid #e5e6ec;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+    .cdx-personality::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    .cdx-personality [contentEditable=true][data-placeholder]::before {
+            position: absolute;
+            content: attr(data-placeholder);
+            color: #707684;
+            font-weight: normal;
+            opacity: 0;
+        }
+
+    .cdx-personality [contentEditable=true][data-placeholder]:empty::before {
+                opacity: 1;
+            }
+
+    .cdx-personality [contentEditable=true][data-placeholder]:empty:focus::before {
+                opacity: 0.3;
+            }
+
+    .cdx-personality__photo {
+        float: right;
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        border-radius: 3px;
+        background: #f6f6f9 url('data:image/svg+xml,<svg fill="rgb(171, 175, 188)" width="35" height="41" xmlns="http://www.w3.org/2000/svg"><path d="M17.347 22.087h.272c2.495-.042 4.514-.916 6.004-2.589 3.278-3.684 2.733-10 2.674-10.602-.213-4.524-2.359-6.689-4.13-7.7C20.847.442 19.305.035 17.585 0H17.441c-.946 0-2.802.153-4.582 1.163-1.788 1.01-3.968 3.175-4.181 7.733-.06.603-.605 6.918 2.674 10.602 1.481 1.673 3.5 2.547 5.995 2.59zM10.95 9.108c0-.025.009-.05.009-.068.28-6.086 4.615-6.74 6.472-6.74H17.534c2.3.051 6.208.985 6.472 6.74 0 .026 0 .051.009.068.008.06.604 5.832-2.104 8.87-1.073 1.206-2.503 1.8-4.385 1.817h-.086c-1.873-.017-3.312-.61-4.377-1.816-2.7-3.022-2.12-8.82-2.112-8.87z"/><path d="M34.983 32.562v-.025c0-.068-.009-.136-.009-.212-.05-1.681-.161-5.611-3.857-6.868l-.085-.025c-3.841-.976-7.034-3.183-7.068-3.209a1.15 1.15 0 0 0-1.601.28 1.142 1.142 0 0 0 .28 1.596c.145.102 3.535 2.453 7.775 3.54 1.985.704 2.206 2.818 2.266 4.754 0 .076 0 .144.008.212.009.764-.042 1.944-.179 2.623-1.38.78-6.787 3.48-15.013 3.48-8.192 0-13.634-2.708-15.022-3.489-.136-.679-.196-1.859-.179-2.623 0-.068.009-.136.009-.212.06-1.935.28-4.049 2.265-4.754 4.24-1.086 7.63-3.446 7.775-3.54.52-.364.647-1.077.281-1.595a1.15 1.15 0 0 0-1.601-.28c-.034.025-3.21 2.232-7.068 3.208-.034.009-.06.017-.085.026C.179 26.714.068 30.644.017 32.316c0 .077 0 .144-.008.212v.026c-.009.441-.018 2.708.434 3.845.085.22.238.408.443.535.255.17 6.378 4.058 16.623 4.058 10.244 0 16.367-3.897 16.622-4.058.196-.127.358-.314.443-.535.426-1.129.417-3.395.409-3.837z"/></svg>') center center no-repeat;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .cdx-personality__name {
+        font-weight: 600;
+        outline: none;
+    }
+
+    .cdx-personality__description {
+        font-size: 0.86em;
+        margin: 10px 0;
+        outline: none;
+    }
+
+    .cdx-personality__link {
+        font-size: 0.68em;
+        color: #6e758a;
+        letter-spacing: 0.1px;
+        text-overflow: ellipsis;
+        outline: none;
+    }
+
+.codex-editor--narrow .cdx-personality {
+    padding: 15px;
+  }
+
+</style><style type="text/css">.cdx-quote-icon svg {
+  transform: rotate(180deg);
+}
+
+.cdx-quote {
+  margin: 0;
+}
+
+.cdx-quote__text {
+  min-height: 158px;
+  margin-bottom: 10px;
+}
+
+.cdx-quote__caption {}
+
+.cdx-quote [contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.cdx-quote [contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.cdx-quote [contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+
+.cdx-quote-settings {
+  display: flex;
+}
+
+.cdx-quote-settings .cdx-settings-button {
+  width: 50%;
+}
+</style><style type="text/css">.ce-rawtool__textarea {
+    min-height: 200px;
+    resize: vertical;
+    border-radius: 5px;
+    background-color: #1e2128;
+    font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+    color: #9ca3b3;
+}
+</style><style type="text/css">.cdx-simple-image {}
+
+.cdx-simple-image .cdx-loader {
+  min-height: 200px;
+}
+
+.cdx-simple-image .cdx-input {
+  margin-top: 10px;
+}
+
+.cdx-simple-image img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.cdx-simple-image__caption[contentEditable=true][data-placeholder]:empty::before {
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+ }
+
+.cdx-simple-image__caption[contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.cdx-simple-image__caption[contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+
+.cdx-simple-image__picture--with-background {
+  background: #eff2f5;
+  padding: 10px;
+}
+
+.cdx-simple-image__picture--with-background img {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.cdx-simple-image__picture--with-border {
+  border: 1px solid #e8e8eb;
+  padding: 1px;
+}
+
+.cdx-simple-image__picture--stretched img {
+  max-width: none;
+  width: 100%;
+}
+</style><style type="text/css">.tc-editor{padding:10px;position:relative;box-sizing:content-box;width:100%;left:-10px}</style><style type="text/css">.tc-toolbar{background:#368be6;}.tc-toolbar--hidden{visibility:hidden}.tc-toolbar--hor{width:100%;height:21px;flex-direction:row;left:0;top:1px}.tc-toolbar--hor,.tc-toolbar--ver{display:flex;align-items:center;position:absolute;z-index:100}.tc-toolbar--ver{height:100%;width:21px;flex-direction:column;top:0;left:-1px}.tc-toolbar__plus{height:21px;width:21px;margin-top:0;}.tc-toolbar__plus--hor{margin-left:-10px}.tc-toolbar__plus--ver{margin-top:-10px}.tc-toolbar__shine-line--hor{min-height:1px;width:100%}.tc-toolbar__shine-line--ver{min-width:1px;height:100%}</style><style type="text/css">.tc-table{width:100%;height:100%;border-collapse:collapse;table-layout:fixed;}.tc-table__wrap{border:1px solid #dbdbe2;border-radius:3px;position:relative;height:100%;width:100%;box-sizing:border-box}.tc-table__cell{border:1px solid #dbdbe2;padding:0;vertical-align:top}.tc-table__area{padding:10px;height:100%}.tc-table__inp{outline:none;flex-grow:100;min-height:1.5em;height:100%;overflow:hidden}.tc-table tbody tr:first-child td{border-top:none}.tc-table tbody tr:last-child td{border-bottom:none}.tc-table tbody tr td:last-child{border-right:none}.tc-table tbody tr td:first-child{border-left:none}</style><style type="text/css">.cdx-warning {
+  position: relative;
+}
+
+.cdx-warning [contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.cdx-warning [contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.cdx-warning [contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+
+.cdx-warning::before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 320 294' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath fill='%237B7E89' d='M160.5 97c12.426 0 22.5 10.074 22.5 22.5v28c0 12.426-10.074 22.5-22.5 22.5S138 159.926 138 147.5v-28c0-12.426 10.074-22.5 22.5-22.5zm0 83c14.636 0 26.5 11.864 26.5 26.5S175.136 233 160.5 233 134 221.136 134 206.5s11.864-26.5 26.5-26.5zm-.02-135c-6.102 0-14.05 8.427-23.842 25.28l-74.73 127.605c-12.713 21.444-17.806 35.025-15.28 40.742 2.527 5.717 8.519 9.175 17.974 10.373h197.255c5.932-1.214 10.051-4.671 12.357-10.373 2.307-5.702-1.812-16.903-12.357-33.603L184.555 70.281C174.608 53.427 166.583 45 160.48 45zm154.61 165.418c2.216 6.027 3.735 11.967 4.393 18.103.963 8.977.067 18.035-3.552 26.98-7.933 19.612-24.283 33.336-45.054 37.586l-4.464.913H61.763l-2.817-.357c-10.267-1.3-19.764-4.163-28.422-9.16-11.051-6.377-19.82-15.823-25.055-27.664-4.432-10.03-5.235-19.952-3.914-29.887.821-6.175 2.486-12.239 4.864-18.58 3.616-9.64 9.159-20.55 16.718-33.309L97.77 47.603c6.469-11.125 12.743-20.061 19.436-27.158 4.62-4.899 9.562-9.07 15.206-12.456C140.712 3.01 150.091 0 160.481 0c10.358 0 19.703 2.99 27.989 7.933 5.625 3.356 10.563 7.492 15.193 12.354 6.735 7.072 13.08 15.997 19.645 27.12l.142.24 76.986 134.194c6.553 10.46 11.425 19.799 14.654 28.577z'/%3E%3C/svg%3E");
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  position: absolute;
+  margin-top: 12px;
+  left: -30px;
+}
+
+@media all and (max-width: 735px) {
+  .cdx-warning::before {
+    display: none;
+  }
+}
+
+.cdx-warning__message {
+  min-height: 85px;
+}
+
+.cdx-warning__title {
+  margin-bottom: 6px;
+}
+</style><style type="text/css">.cdx-notify--error{background:#fffbfb!important}.cdx-notify--error::before{background:#fb5d5d!important}.cdx-notify__input{max-width:130px;padding:5px 10px;background:#f7f7f7;border:0;border-radius:3px;font-size:13px;color:#656b7c;outline:0}.cdx-notify__input:-ms-input-placeholder{color:#656b7c}.cdx-notify__input::placeholder{color:#656b7c}.cdx-notify__input:focus:-ms-input-placeholder{color:rgba(101,107,124,.3)}.cdx-notify__input:focus::placeholder{color:rgba(101,107,124,.3)}.cdx-notify__button{border:none;border-radius:3px;font-size:13px;padding:5px 10px;cursor:pointer}.cdx-notify__button:last-child{margin-left:10px}.cdx-notify__button--cancel{background:#f2f5f7;box-shadow:0 2px 1px 0 rgba(16,19,29,0);color:#656b7c}.cdx-notify__button--cancel:hover{background:#eee}.cdx-notify__button--confirm{background:#34c992;box-shadow:0 1px 1px 0 rgba(18,49,35,.05);color:#fff}.cdx-notify__button--confirm:hover{background:#33b082}.cdx-notify__btns-wrapper{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;margin-top:5px}.cdx-notify__cross{position:absolute;top:5px;right:5px;width:10px;height:10px;padding:5px;opacity:.54;cursor:pointer}.cdx-notify__cross::after,.cdx-notify__cross::before{content:'';position:absolute;left:9px;top:5px;height:12px;width:2px;background:#575d67}.cdx-notify__cross::before{transform:rotate(-45deg)}.cdx-notify__cross::after{transform:rotate(45deg)}.cdx-notify__cross:hover{opacity:1}.cdx-notifies{position:fixed;z-index:2;bottom:20px;left:20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif}.cdx-notify{position:relative;width:220px;margin-top:15px;padding:13px 16px;background:#fff;box-shadow:0 11px 17px 0 rgba(23,32,61,.13);border-radius:5px;font-size:14px;line-height:1.4em;word-wrap:break-word}.cdx-notify::before{content:'';position:absolute;display:block;top:0;left:0;width:3px;height:calc(100% - 6px);margin:3px;border-radius:5px;background:0 0}@keyframes bounceIn{0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(.9)}100%{transform:scale(1)}}.cdx-notify--bounce-in{animation-name:bounceIn;animation-duration:.6s;animation-iteration-count:1}.cdx-notify--success{background:#fafffe!important}.cdx-notify--success::before{background:#41ffb1!important}</style><style type="text/css">.ce-paragraph {
+    line-height: 1.6em;
+    outline: none;
+}
+
+.ce-paragraph[data-placeholder]:empty::before{
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+/** Show placeholder at the first paragraph if Editor is empty */
+.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.codex-editor--toolbox-opened .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before,
+.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+.ce-paragraph p:first-of-type{
+    margin-top: 0;
+}
+
+.ce-paragraph p:last-of-type{
+    margin-bottom: 0;
+}
+</style><script src="./skillstruck_files/f(1).txt"></script></head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-white cstm-nav flex-wrap">
+        <div class="col-6 col-sm-auto px-0 order-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <a class="navbar-brand cstm-logo cstm-logo-link" href="http://localhost:8000/account/dashboard/">
+                    <div class="logo-wrapper"><img class="logo" src="./skillstruck_files/gradient-green-logo-square-logo.svg" alt="Skill Struck logo" width="30" height="30"></div>
+                    <p class="wordmark text-uppercase">
+                    <b>Skill</b><span class="sr-only">&nbsp;</span><span class="skst-wordmark-struck">Struck</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="col-6 col-sm-auto px-0 order-sm-2">
+            <div class="d-flex justify-content-end">
+                <button type="button" data-toggle="collapse" data-target="#navPageLinksCollapse" aria-controls="navPageLinksCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed  ml-3">
+                    <span class="fas fa-bars" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-auto px-0 my-2 order-0">
+            <div class="d-flex flex-wrap flex-lg-nowrap w-feed-content-full">
+                <div id="navPageLinksCollapse" class="navbar-collapse pr-3 collapse">
+                    <ul class="navbar-nav">
+                        <li id="nav_home" class="nav-item">
+                            <a class="nav-link" href="http://localhost:8000/student/portal2/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="nav_code" class="nav-item active">
+                            <a class="nav-link" href="http://localhost:8000/student/code/">Code &amp; Learn</a>
+                        </li>
+                        <li id="nav_files" class="nav-item">
+                            <a class="nav-link" href="http://localhost:8000/student/files/">Files</a>
+                        </li>
+                        <li id="nav_profile" class="nav-item">
+                            <a class="nav-link" href="http://localhost:8000/student/profile/">Profile</a>
+                        </li>
+                        <li id="nav_messages" class="nav-item">
+                            <a class="nav-link" href="http://localhost:8000/student/inbox/">Messages</a>
+                        </li>
+                        <li id="nav_help" class="nav-item">
+                            <a onclick="show_help()" class="nav-link" href="http://localhost:8000/student/code/#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto col-sm-auto px-0 my-2 order-0 mr-0 ml-auto">
+            <ul class="navbar-nav mr-auto flex-row">
+                <li id="nav_curriculum" class="nav-item pr-2" style="display: none;">
+                    <a onclick="toggle_curriculum()" class="btn btn-light btn-icon app-link" href="http://localhost:8000/student/code/#">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                        <span class="sr-only">Toggle Curriculum</span>
+                    </a>
+                </li>
+                <li class="nav-item px-0 w-sidenav mr-0 ml-md-auto">
+                    <button id="profile-nav-link" class="btn btn-light profile-link right-nav-activate">
+                        <span class="sr-only">nicole1 overview</span>
+                        <img class="profile-img" src="./skillstruck_files/b-cat-1.svg">
+                        <div class="d-none d-lg-block px-3 text-left">
+                            <p class="profile-name">nicole1</p>
+                            <p class="profile-stats"><i class="cstm-icon lightning active"><span></span></i><span class="profile-points">110</span>&nbsp;points</p>
+                        </div>
+                        <i aria-hidden="true" class="fas fa-caret-down d-none d-lg-flex px-3 mr-0 ml-auto"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>    
+        </nav>
+
+        <div id="profile-nav" class="side-nav right-nav">
+            <div class="side-nav-in">
+                <div class="position-relative profile-img-wrapper">
+                    <img class="profile-img" src="./skillstruck_files/b-cat-1.svg">
+                    <div class="position-absolute profile-nav--img-overlay">
+                        <a class="btn btn-light btn-icon ml-md-auto mr-md-0" href="http://localhost:8000/student/avatar/">
+                        <i class="fas fa-cog" aria-hidden="true"></i>
+                        <span class="sr-only">Edit profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="list-group" id="profile-nav--tablist" role="tablist">
+                    <ul class="list-group">
+                        <li class="list-group-item profile-nav--list-item stat-item">
+                            <p class="profile-stats">
+                            <i class="cstm-icon lightning active"><span></span></i>
+                            <span class="profile-points">110 points</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <a class="list-group-item list-group-item-action profile-nav--list-item link-item" id="profile-nav--profile" href="http://localhost:8000/student/profile/" role="tab">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                        View Profile
+                    </a>
+                    <a class="list-group-item list-group-item-action profile-nav--list-item link-item" id="profile-nav--logout" href="http://localhost:8000/account/dashboard/" role="tab">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        Switch Accounts
+                    </a>
+                    <a class="list-group-item list-group-item-action profile-nav--list-item link-item" id="profile-nav--logout-all" href="http://localhost:8000/logout/" role="tab">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                        Log out
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    <div class="container-fluid p-0 mp-load" id="code_page_body">
+    <div class="mp-outer layout-top" id="mp-outer">
+        <div class="mp-wrapper horizontal" id="mp-wrapper-0">
+            <div class="mp-pane secondary" id="pane-0" style="width:469.3333333333333px">
+                <div class="mp-content secondary" id="learn">
+                    <div class="content-in px-0" id="curriculum_col">
+                        <div class="content-section content-header d-flex px-4" id="lessonsMenu-header">
+                            <button id="show_options" class="btn btn-sm btn-light btn-block d-flex justify-content-between has-hamburger" type="button">
+                                <div class="white-space-ellipsis">Change lessons</div>
+                                <div class="hamburger hamburger--spin small learn-burger">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="content-section content-section px-4 overflow-auto" id="curriculum_content">
+                            <div id="curriculum_sections"><h5 id="course">Courses</h5>
+<select id="select_course" class="form-control">
+    <option value="5">Web Development</option>
+    <option value="6">Python</option>
+</select>
+<div id="accordion_5" class="accordion_container" style="">
+    <div class="unit_container">
+        <div class="clickable section" id="section_17" data-toggle="collapse" data-target="#container_17" aria-expanded="true" aria-controls="container_17">
+            <div class="mb-0 mt-3">
+                <button class="btn btn-block btn-light btn-sm">
+                    <div class="d-flex w-100 justify-content-between">
+                        <span>HTML 1</span>
+                        <div class="dropdown-arrow">
+                            <i class="fas fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="container_17" class="collapse show" aria-labelledby="section_17" data-parent="#accordion_5" style="">
+            <ul class="list-group clickable sections_list mt-3">
+                <li id="checkpoint_301" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">HTML Basics</li>
+                <li id="checkpoint_302" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Headers</li>
+                <li id="checkpoint_303" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Text Colors</li>
+                <li id="checkpoint_304" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Fonts</li>
+                <li id="checkpoint_305" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">HTML as a Language</li>
+                <li id="checkpoint_306" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">HTML Structure</li>
+                <li id="checkpoint_307" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Background Color</li>
+                <li id="checkpoint_308" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">HTML Title</li>
+                <li id="checkpoint_309" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Paragraphs</li>
+                <li id="checkpoint_310" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Breaks and Dividers</li>
+                <li id="checkpoint_311" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Ordered Lists</li>
+                <li id="checkpoint_312" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Unordered Lists</li>
+                <li id="checkpoint_313" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Images</li>
+                <li id="checkpoint_314" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Background Image</li>
+                <li id="checkpoint_315" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Videos</li>
+                <li id="checkpoint_316" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Links</li>
+                <li id="checkpoint_317" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Marquees</li>
+                <li id="checkpoint_318" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Media Checkpoint</li>
+            </ul>
+        </div>
+    </div>
+    <div class="unit_container">
+        <div class="clickable section" id="section_18" data-toggle="collapse" data-target="#container_18" aria-expanded="false" aria-controls="container_18">
+            <div class="mb-0 mt-3">
+                <button class="btn btn-block btn-light btn-sm">
+                    <div class="d-flex w-100 justify-content-between">
+                        <span>CSS 1</span>
+                        <div class="dropdown-arrow">
+                            <i class="fas fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="container_18" class="collapse" aria-labelledby="section_18" data-parent="#accordion_5">
+            <ul class="list-group clickable sections_list mt-3">
+                <li id="checkpoint_319" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">The Style Tag</li>
+                <li id="checkpoint_320" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">CSS Intro</li>
+                <li id="checkpoint_321" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Background Image Style</li>
+                <li id="checkpoint_322" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">External Style Sheet</li>
+                <li id="checkpoint_323" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Comments</li>
+                <li id="checkpoint_324" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Classes</li>
+                <li id="checkpoint_325" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Theme Checkpoint</li>
+                <li id="checkpoint_326" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Div Tags</li>
+                <li id="checkpoint_327" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Margin and Padding</li>
+                <li id="checkpoint_328" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Positioning</li>
+                <li id="checkpoint_329" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Prepare for Layouts</li>
+                <li id="checkpoint_330" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Create the Layout</li>
+                <li id="checkpoint_331" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Style the Layout</li>
+                <li id="checkpoint_332" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Layout Checkpoint</li>
+                <li id="checkpoint_333" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">List Styles</li>
+                <li id="checkpoint_334" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Pseudo Selectors</li>
+                <li id="checkpoint_335" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Unit Checkpoint</li>
+                <li id="checkpoint_337" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Media Queries Intro</li>
+                <li id="checkpoint_338" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Media Queries Positioning</li>
+            </ul>
+        </div>
+    </div>
+    <div class="unit_container">
+        <div class="clickable section" id="section_19" data-toggle="collapse" data-target="#container_19" aria-expanded="false" aria-controls="container_19">
+            <div class="mb-0 mt-3">
+                <button class="btn btn-block btn-light btn-sm">
+                    <div class="d-flex w-100 justify-content-between">
+                        <span>HTML + CSS 2</span>
+                        <div class="dropdown-arrow">
+                            <i class="fas fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="container_19" class="collapse" aria-labelledby="section_19" data-parent="#accordion_5">
+            <ul class="list-group clickable sections_list mt-3">
+                <li id="checkpoint_339" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">External Style Sheet</li>
+                <li id="checkpoint_340" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Bootstrap Intro</li>
+                <li id="checkpoint_341" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Bootstrap Classes</li>
+                <li id="checkpoint_342" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Bootstrap Grid</li>
+                <li id="checkpoint_343" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Twelve Column Grid</li>
+                <li id="checkpoint_344" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Grid Checkpoint</li>
+                <li id="checkpoint_345" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Jumbotron</li>
+                <li id="checkpoint_346" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Cards</li>
+                <li id="checkpoint_347" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Carousels</li>
+                <li id="checkpoint_348" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Bootstrap Nav Bar</li>
+                <li id="checkpoint_349" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Components Checkpoint</li>
+                <li id="checkpoint_350" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Transform</li>
+                <li id="checkpoint_351" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Transition</li>
+                <li id="checkpoint_352" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Transitions Checkpoint</li>
+                <li id="checkpoint_353" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Tables Intro</li>
+                <li id="checkpoint_354" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Tables Advanced</li>
+                <li id="checkpoint_355" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Table Styles</li>
+                <li id="checkpoint_356" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Table Checkpoint</li>
+                <li id="checkpoint_357" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Forms</li>
+                <li id="checkpoint_358" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Text Input</li>
+                <li id="checkpoint_359" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Radio Input</li>
+                <li id="checkpoint_360" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Submit Input</li>
+                <li id="checkpoint_361" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Form Checkpoint</li>
+            </ul>
+        </div>
+    </div>
+    <div class="unit_container">
+        <div class="clickable section" id="section_20" data-toggle="collapse" data-target="#container_20" aria-expanded="false" aria-controls="container_20">
+            <div class="mb-0 mt-3">
+                <button class="btn btn-block btn-light btn-sm">
+                    <div class="d-flex w-100 justify-content-between">
+                        <span>JavaScript 1</span>
+                        <div class="dropdown-arrow">
+                            <i class="fas fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="container_20" class="collapse" aria-labelledby="section_20" data-parent="#accordion_5">
+            <ul class="list-group clickable sections_list mt-3">
+                <li id="checkpoint_362" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Programming Logic &amp; Languages</li>
+                <li id="checkpoint_363" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">JavaScript Intro</li>
+                <li id="checkpoint_364" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Console Logs, Alerts &amp; Prompts</li>
+                <li id="checkpoint_365" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Output Checkpoint</li>
+                <li id="checkpoint_366" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Math</li>
+                <li id="checkpoint_367" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Concatenation</li>
+                <li id="checkpoint_368" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Functions</li>
+                <li id="checkpoint_369" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Parameters</li>
+                <li id="checkpoint_370" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Return Statement</li>
+                <li id="checkpoint_371" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Functions Checkpoint</li>
+                <li id="checkpoint_372" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">If Statements</li>
+                <li id="checkpoint_373" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Else If Statements</li>
+                <li id="checkpoint_374" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">If Statement Conditions</li>
+                <li id="checkpoint_375" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">If, Else If Checkpoint</li>
+                <li id="checkpoint_376" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">getElementById</li>
+                <li id="checkpoint_377" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Inner HTML</li>
+                <li id="checkpoint_378" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Event Listeners: onClick</li>
+                <li id="checkpoint_379" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="5" tabindex="0">Interaction Checkpoint</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="accordion_6" class="accordion_container" style="display: none;">
+    <div class="unit_container">
+        <div class="clickable section" id="section_21" data-toggle="collapse" data-target="#container_21" aria-expanded="false" aria-controls="container_21">
+            <div class="mb-0 mt-3">
+                <button class="btn btn-block btn-light btn-sm">
+                    <div class="d-flex w-100 justify-content-between">
+                        <span>Python 1</span>
+                        <div class="dropdown-arrow">
+                            <i class="fas fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="container_21" class="collapse" aria-labelledby="section_21" data-parent="#accordion_6">
+            <ul class="list-group clickable sections_list mt-3">
+                <li id="checkpoint_380" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Introduction</li>
+                <li id="checkpoint_381" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Variables</li>
+                <li id="checkpoint_382" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Syntax &amp; comments</li>
+                <li id="checkpoint_383" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Variable Types</li>
+                <li id="checkpoint_384" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Numbers</li>
+                <li id="checkpoint_385" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Casting</li>
+                <li id="checkpoint_386" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Converting</li>
+                <li id="checkpoint_387" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Strings</li>
+                <li id="checkpoint_388" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">String Methods</li>
+                <li id="checkpoint_389" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">String Methods, cont'd</li>
+                <li id="checkpoint_390" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Checking Strings</li>
+                <li id="checkpoint_391" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Concatenation</li>
+                <li id="checkpoint_392" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Concatenating Numbers</li>
+                <li id="checkpoint_393" class="close-learn-burger list-group-item checkpoint " data-checkpoint="" data-course="6" tabindex="0">Concatenating Numbers, cont'd</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+                            <div id="challenges" style="display: none;"></div>
+                            <div id="curriculum_quiz"></div>
+                            <div id="build_curriculum" style="display: none;">
+                                <div id="cms_editor"></div>
+                                <div id="lesson_checkpoint"></div>
+                                <div id="curriculum_nav" class="mt-4">
+                                    <div class="text-muted small text-center">
+                                        © Skill Struck LLC 2018 - 2019, All Rights Reserved
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex">
+                                        <button onclick="prev_section()" class="prev mr-auto ml-3 btn btn-link">Back</button>
+                                        <button onclick="next_section()" class="next btn ml-auto mr-3 btn-outline-blue">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <button class="btn mp-btn mp-btn-tour"><span class="btn-display"> </span></button>
+            <div class="mp-pane secondary" id="pane-1" style="width:469.3333333333333px">
+                <div class="mp-content secondary" id="code">
+                    <div class="content-in">
+                        <div class="content-section content-header d-flex" id="filesMenu-header">
+                            <button class="btn btn-sm btn-light btn-block d-flex justify-content-between has-hamburger collapsed" id="files-menu-btn" type="button" data-toggle="collapse" data-target="#filesMenu" aria-expanded="false" aria-controls="filesMenu">
+                                <div class="white-space-ellipsis">
+                                    <span class="active-file-name">index.html</span>
+                                    &nbsp;
+                                </div>
+                                <div class="hamburger hamburger--spin small">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </div>
+                            </button>
+                            <button type="button" id="fileSettings-modal-btn" class="file_options file_options-tour btn-icon btn btn-light ml-2" data-toggle="modal" data-target="#fileSettings-modal" title="Edit or delete index.html">
+                                <span class="sr-only">Change edit/delete</span>
+                                <span class="sr-only active-file-name">index.html</span>
+                                <span class="sr-only">.</span>
+                                <i aria-hidden="true" class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <button type="button" id="editorSettings-modal-btn" class="editor_options editor_options-tour btn-icon btn btn-light ml-2" data-toggle="modal" data-target="#editorSettings-modal" title="Editor Settings">
+                              <span class="sr-only">Edit Settings</span>
+                              <span class="sr-only active-file-name">index.html</span>
+                              <span class="sr-only">.</span>
+                              <i aria-hidden="true" class="fas fa-cog"></i>
+                          </button>
+                        </div>
+                        <div class="content-section">
+                            <div class="raised scroll-card collapse" id="filesMenu" style="">
+                                <div class="scroll-card-inner">
+                                    <div class="scroll-card-body">
+                                        <ul id="dynamic_directory" class="list-unstyled m-0"><li class="d-flex p-0 active"><button class="list-item-btn file" title="View index.html file in editor" data-file="index:html">index.html</button><button class="file_options list-item-btn list-item-btn-icon" title="Edit or delete index.html" data-value="11"><i aria-hidden="true" class="fal fa-ellipsis-v"></i><span class="sr-only">File options</span></button></li><li class="d-flex p-0"><button class="list-item-btn file" title="View index.css file in editor" data-file="index:css">index.css</button><button class="file_options list-item-btn list-item-btn-icon" title="Edit or delete index.css" data-value="12"><i aria-hidden="true" class="fal fa-ellipsis-v"></i><span class="sr-only">File options</span></button></li><li class="d-flex p-0"><button class="list-item-btn file" title="View test.js file in editor" data-file="test:js">test.js</button><button class="file_options list-item-btn list-item-btn-icon" title="Edit or delete test.js" data-value="24"><i aria-hidden="true" class="fal fa-ellipsis-v"></i><span class="sr-only">File options</span></button></li><li class="d-flex p-0"><button class="list-item-btn file" title="View about.css file in editor" data-file="about:css">about.css</button><button class="file_options list-item-btn list-item-btn-icon" title="Edit or delete about.css" data-value="38"><i aria-hidden="true" class="fal fa-ellipsis-v"></i><span class="sr-only">File options</span></button></li><li class="d-flex p-0"><button class="list-item-btn file" title="View practice.py file in editor" data-file="practice:py">practice.py</button><button class="file_options list-item-btn list-item-btn-icon" title="Edit or delete practice.py" data-value="69"><i aria-hidden="true" class="fal fa-ellipsis-v"></i><span class="sr-only">File options</span></button></li></ul>
+                                    </div>
+                                    <div class="scroll-card-footer">
+                                        <button id="new_file" role="button" class="btn btn-white btn-block ">New
+                                            File</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card editor-card">
+                                <textarea onchange="update_changed()" id="main_editor" class="editor-input" style="height: 60px; overflow-y: hidden; display: none;">loading</textarea>
+                                <!--
+                                <div class="CodeMirror cm-s-default CodeMirror-wrap">
+                                <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;">
+                                <textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                                </div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="width: 18px; pointer-events: none;">
+                                <div style="min-width: 1px; height: 0px;"></div></div>
+                                <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="height: 18px; pointer-events: none;">
+                                <div style="height: 100%; min-height: 1px; width: 0px;"></div></div>
+                                <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                                <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                                <div class="CodeMirror-scroll" tabindex="-1">
+                                <div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: 0px; border-right-width: 30px; min-height: 217px; padding-right: 0px; padding-bottom: 0px;">
+                                <div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;">
+                                <div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>11</div>
+                                </div><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>2</div></div><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>11</div></div></div>
+                                <div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 19px;">&nbsp;</div></div>
+                                <div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div>
+                                <pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre></div><div style="position: relative;">
+                                <div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation">
+                                <span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;">
+                                <div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation">
+                                <span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;">
+                                <div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">
+                                 &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>Nicole's Website!<span class="cm-tag cm-bracket">&lt;/</span>
+                                 <span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;">
+                                 <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;
+                                 <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span> <span class="cm-attribute">href</span>=
+                                 <span class="cm-string">"index.css"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;">
+                                 <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> 
+                                 &nbsp;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;">
+                                 <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span>
+                                 <span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div>
+                                 </div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Welcome!<span class="cm-tag cm-bracket">&lt;/</span>
+                                 <span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div>
+                                 <pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>This is my website<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>
+                                 </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;/</span>
+                                 <span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">
+                                 <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 217px;"></div><div class="CodeMirror-gutters" style="height: 247px; left: 0px;">
+                                 <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn mp-btn"><span class="btn-display"> </span></button>
+            <div class="mp-pane primary" id="pane-2" style="width:469.3333333333333px">
+                <div class="mp-content primary" id="preview-pane-content">
+                    <div class="content-in">
+                        <div class="content-section content-header d-flex">
+                            <button class="btn btn-sm btn-light btn-block mr-2 my-0 justify-content-center" id="load_preview_button" onclick="load_preview()">Run</button>
+                            <button class="btn btn-sm btn-light btn-block my-0 justify-content-center" id="save_button" onclick="save_all()"><span id="status">Save</span></button>
+                        </div>
+                        <div class="content-section d-flex">
+                            <div id="frame_container" class="h-100 card">
+                                <div id="cover_iframe" style="display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 500;"></div>
+                                <iframe id="preview" frameborder="0" style="width:100%;height:100%;background-color:white;" src="./skillstruck_files/saved_resource.html"></iframe>
+                            </div>
+                            <button class="btn btn-sm btn-light btn-block mr-2 my-0 justify-content-center" id="new_tab_button" onclick="new_tab()">Open in new window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="fileSettings-modal" tabindex="-1" role="dialog" aria-labelledby="fileSettings-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="form_options">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fileSettings-modal-label">Edit&nbsp;<span class="replace-file-name"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="file_option_form" method="post" action="http://localhost:8000/account/files.rename_file/">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="ssoTJLUoIf8nm5rfcSYj9aeSrAcHjVdixcnXV3w7ZWmHMwLmVezGTI6viEDjUalq">
+                    <input id="id_page" type="text" name="page" class="d-none">
+                    <div class="form-group">
+                        <label for="id_page_name">Rename&nbsp;<span class="replace-file-name font-weight-bold"></span></label>
+                        <div class="d-flex">
+                            <input id="id_page_name" class="form-control" type="text" name="name" required="" placeholder="Rename your file">
+                            <input class="btn ml-2 btn-outline-danger" id="delete-file-input" name="remove" form="file_option_form" onclick="return confirm(&#39;Are you sure you want to delete this file?&#39;)" value="Delete File" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary" type="submit" form="file_option_form">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade editor-settings" id="editorSettings-modal" tabindex="-1" role="dialog" aria-labelledby="editorSettings-modal-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" id="form_options">
+          <div class="modal-header">
+              <h5 class="modal-title" id="editorSettings-modal-label">Editor Settings</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-input"><input type="checkbox" name="autoCloseTags" value="false" checked> Auto Close Tags<br></div>
+            <div class="modal-input"><input type="checkbox" name="autoCloseBrackets" value="false"> Auto Close Brackets<br></div>
+            <div class="modal-input"><input type="checkbox" name="lineWrapping" value="false" checked> Line Wrapping<br></div>
+            <div class="modal-theme-select">Select a theme: 
+              <select id="themeSelect" class="form-control">
+                <option value="default">Default</option>
+                <option value="neo">Neo</option>
+                <option value="monokai">Monokai</option>
+                <option value="dracula">Dracula</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-primary" id="submit_editor_settings">Save changes</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="add_file-modal" tabindex="-1" role="dialog" aria-labelledby="add_file-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="add_file">
+            <div class="modal-header">
+                <h5 class="modal-title" id="add_file-modal-label">Create file
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>New file name</label>
+                    <input id="id_filename" class="form-control" type="text">
+                    <small>Hint: to create folders, name your file in this pattern: folder/file.html</small>
+                </div>
+                <div class="form-group">
+                    <label>Select a file type</label>
+                    <select id="id_filetype" class="form-control">
+                        <option value="html">.html</option>
+                        <option value="css">.css</option>
+                        <option value="js">.js</option>
+                    </select>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-link" id="submit_file">Add file</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-none">
+    <div id="sources">
+        <textarea class="codeBox active" data-value="11" id="index:html" style="height:60px;overflow-y:hidden;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Nicole's Website!&lt;/title&gt;
+    &lt;link rel="stylesheet" href="index.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;h2&gt;This is my website&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+        <textarea class="codeBox" data-value="12" id="index:css" style="height:60px;overflow-y:hidden;">h1 {
+  font-family: monospace;
+}
+body {
+  background-color: lightgreen;
+}</textarea>
+        <textarea class="codeBox" data-value="24" id="test:js" style="height:60px;overflow-y:hidden;">console.log("hello");</textarea>
+        <textarea class="codeBox" data-value="38" id="about:css" style="height:60px;overflow-y:hidden;">.cool {
+  color: blue;
+}</textarea>
+        <textarea class="codeBox" data-value="69" id="practice:py" style="height:60px;overflow-y:hidden;">print('Hello World')
+print(2 * 43)</textarea>
+    </div>
+    <input style="display:none;" id="csrf" type="text" value="R1ID5b54FB8Kv5BUs0zVdEjYN8ADAGk5WLHHhtHNWim4VwV1bmaiXcbBEc1fbVsd">
+    <input style="display:none;" id="id_folder" type="number" value="4">
+</div>
+
+
+        <div id="help_section" style="display:none; position:fixed; right:0; bottom:0; z-index:10000;">
+            <div class="card mr-3 mb-3 full-shadow" style="max-height: 90vh; overflow-y: scroll; width: 30vw; min-width: 300px;">
+                <div class="card-header">
+                    Get Help
+                    <i onclick="hide(&#39;help_section&#39;)" class="material-icons clickable float-right">clear</i>
+                </div>
+                <ul id="help_section_content" class="card-body list-unstyled" style="max-height:50vh; overflow-y: scroll;"></ul>
+                <div class="card-footer">
+                    <form id="help_form" method="post" action="http://localhost:8000/student/help/">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="bXacwrTNsGTO6D8tfJTGKwNe37M85S1cgH9gIJvwJn78w4sAY5u3u4FRUbdKG79k">
+                        <textarea id="id_help_question" name="question" class="form-control" placeholder="Type your question" style="height:60px;overflow-y:hidden;"></textarea>
+                        <div id="user_email">
+                            <p>Your Email: test@skillstruck.com</p>
+                        </div>
+                        <button id="submit_help_form" class="btn btn-primary mt-2" type="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="./skillstruck_files/94b63e3853.js"></script>
+        <script src="./skillstruck_files/jquery-3.4.1.min.js"></script>
+        <script src="./skillstruck_files/popper.min.js"></script>
+        <script src="./skillstruck_files/bootstrap.min.js"></script>
+        <script src="./skillstruck_files/main.js"></script>
+        <script src="./skillstruck_files/base.js"></script>
+        
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-125968099-1', {
+        'custom_map': {'dimension1': 'lesson'}
+    });
+    gtag('config', 'UA-125968099-1');
+    gtag('config', 'AW-786647917');
+</script>
+
+    
+<script type="text/javascript" src="./skillstruck_files/codemirror.js"></script>
+<script type="text/javascript" src="./skillstruck_files/css.js"></script>
+<script type="text/javascript" src="./skillstruck_files/javascript.js"></script>
+<script type="text/javascript" src="./skillstruck_files/xml.js"></script>
+<script type="text/javascript" src="./skillstruck_files/htmlmixed.js"></script>
+<script type="text/javascript" src="./skillstruck_files/python.js"></script>
+<script type="text/javascript" src="./skillstruck_files/closetag.js"></script>
+<script type="text/javascript" src="./skillstruck_files/closebrackets.js"></script>
+<script type="text/javascript" src="./skillstruck_files/multipane.js"></script>
+<script type="text/javascript" src="./skillstruck_files/hamburgers.js"></script>
+<script type="text/javascript" src="./skillstruck_files/popper.js@1"></script>
+<script type="text/javascript" src="./skillstruck_files/tippy.js@5"></script>
+
+<script src="./skillstruck_files/attaches.js"></script>
+<script src="./skillstruck_files/checklist.js"></script>
+<script src="./skillstruck_files/code.js"></script>
+<script src="./skillstruck_files/delimiter.js"></script>
+<script src="./skillstruck_files/embed.js"></script>
+<script src="./skillstruck_files/header.js"></script>
+<script src="./skillstruck_files/image.js"></script>
+<script src="./skillstruck_files/inline-code.js"></script>
+<script src="./skillstruck_files/link.js"></script>
+<script src="./skillstruck_files/list.js"></script>
+<script src="./skillstruck_files/marker.js"></script>
+<script src="./skillstruck_files/paragraph.js"></script>
+<script src="./skillstruck_files/personality.js"></script>
+<script src="./skillstruck_files/quote.js"></script>
+<script src="./skillstruck_files/raw.js"></script>
+<script src="./skillstruck_files/simple-image.js"></script>
+<script src="./skillstruck_files/table.js"></script>
+<script src="./skillstruck_files/warning.js"></script>
+<script src="./skillstruck_files/editorjs.js"></script>
+<script src="./skillstruck_files/timeme.min.js"></script>
+
+<script type="text/javascript" src="./skillstruck_files/stour-init.js"></script>
+
+<script type="text/javascript">
+    let nav_code = document.getElementById("nav_code");
+    let header = document.getElementsByTagName("header")[0];
+    if (nav_code) {
+        nav_code.classList.add("active");
+    }
+    if (header) {
+        document.getElementById("code_page_body").style.top = header.offsetHeight + "px";
+    }
+    var initial_lesson = "";
+    var glossary = {"html": {"title": "HTML", "definition": "Hyper Text Markup Language", "example": ""}, "css": {"title": "CSS", "definition": "Cascade Style Sheets", "example": ""}, "css2": {"title": "CSS", "definition": "Cascade Style Sheets", "example": ""}, "javascript": {"title": "JavaScript", "definition": "Fancy code", "example": ""}};
+</script>
+<script src="./skillstruck_files/all_code.js"></script>
+
+<!--
+<link rel="stylesheet" href="./skillstruck_files/free.min.css" media="all">
+-->
+    
+</div></body></html>

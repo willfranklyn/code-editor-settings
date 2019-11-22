@@ -1,0 +1,131 @@
+.codex-editor h1,
+.codex-editor h2,
+.codex-editor h3,
+.codex-editor h4,
+.codex-editor h5,
+.codex-editor h6,
+.codex-editor .ce-paragraph {
+  padding: 0;
+  color: black;
+  line-height: 1.33333333;
+  margin: 0 0 0.75rem 0; }
+
+.codex-editor ul {
+  margin: 0; }
+
+.codex-editor p,
+.codex-editor .ce-paragraph,
+.codex-editor ul,
+.codex-editor li {
+  font-size: 0.875rem;
+  margin: -0.25rem 0 1.25rem 0; }
+  @media only screen and (min-width: 768px) {
+    .codex-editor p,
+    .codex-editor .ce-paragraph,
+    .codex-editor ul,
+    .codex-editor li {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 992px) {
+    .codex-editor p,
+    .codex-editor .ce-paragraph,
+    .codex-editor ul,
+    .codex-editor li {
+      font-size: 1rem; } }
+
+.codex-editor li {
+  margin-bottom: 0; }
+
+.codex-editor h1 {
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 768px) {
+    .codex-editor h1 {
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 992px) {
+    .codex-editor h1 {
+      font-size: 2rem; } }
+
+.codex-editor h2 {
+  font-size: 1.25rem; }
+  @media only screen and (min-width: 768px) {
+    .codex-editor h2 {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 992px) {
+    .codex-editor h2 {
+      font-size: 1.75rem; } }
+
+.codex-editor h3 {
+  font-size: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .codex-editor h3 {
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 992px) {
+    .codex-editor h3 {
+      font-size: 1.5rem; } }
+
+.codex-editor h4 {
+  font-size: 0.875rem; }
+  @media only screen and (min-width: 768px) {
+    .codex-editor h4 {
+      font-size: 1.175rem; } }
+  @media only screen and (min-width: 992px) {
+    .codex-editor h4 {
+      font-size: 1.25rem; } }
+
+.codex-editor h5,
+.codex-editor h6 {
+  font-size: 0.75rem; }
+  @media only screen and (min-width: 768px) {
+    .codex-editor h5,
+    .codex-editor h6 {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 992px) {
+    .codex-editor h5,
+    .codex-editor h6 {
+      font-size: 1rem; } }
+
+.codex-editor h6 {
+  color: #757575; }
+
+.codex-editor ul {
+  padding-left: 0.75rem;
+  margin-left: 0.5rem; }
+
+.codex-editor .checkpoint_section p,
+.codex-editor .checkpoint_section .ce-paragraph,
+.codex-editor .checkpoint_section ul,
+.codex-editor .checkpoint_section li {
+  font-size: 0.875rem; }
+
+.codex-editor .checkpoint_section h1 {
+  font-size: 1.5rem; }
+
+.codex-editor .checkpoint_section h2 {
+  font-size: 1.25rem; }
+
+.codex-editor .checkpoint_section h3 {
+  font-size: 1rem; }
+
+.codex-editor .checkpoint_section h4 {
+  font-size: 0.875rem; }
+
+.codex-editor .checkpoint_section h5,
+.codex-editor .checkpoint_section h6 {
+  font-size: 0.75rem; }
+
+.codex-editor .checkpoint_section h6 {
+  color: #757575; }
+
+.codex-editor .codex-editor-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  pointer-events: none;
+  overflow: hidden; }
+
+.codex-editor .codex-editor__redactor {
+  padding-bottom: 0 !important; }
+
+/*# sourceMappingURL=editor.css.map */

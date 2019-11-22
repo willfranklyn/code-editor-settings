@@ -1,0 +1,746 @@
+/* FOR CURRICULUM SECTIONS */
+.checkpoint.active,
+.challenge.active {
+    color: white !important;
+    background-color: #53B199;
+    border: none;
+}
+
+.checkpoint,
+.challenge {
+    color: #25434B !important;
+    cursor: pointer;
+}
+
+.checkpoint:hover:not(.active),
+.challenge:hover:not(.active) {
+    background-color: rgba(83, 177, 153, 0.3);
+}
+
+#pause {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(150, 150, 150, 0.5);
+    z-index: 1005;
+}
+
+#code_page_body .btn {
+    font-size: 14px;
+    border-width: 2px;
+}
+
+#code_page_body .btn .fas,
+#code_page_body .btn .fa,
+#code_page_body .btn .far {
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code_page_body .btn .fas:before,
+#code_page_body .btn .fa:before,
+#code_page_body .btn .far:before,
+#code_page_body .btn .fas:after,
+#code_page_body .btn .fa:after,
+#code_page_body .btn .far:after {
+    font-size: 20px;
+}
+
+#code_page_body .fa-angle-left:before {
+    content: "\f104";
+    font-size: 24px !important;
+}
+
+.btn.btn-link,
+.btn.btn-link:hover,
+.btn.btn-link:focus,
+.btn.btn-link:active {
+    text-decoration: none;
+    border: none;
+}
+
+.btn.btn-link:hover .btn-link-text,
+.btn.btn-link:focus .btn-link-text,
+.btn.btn-link:active .btn-link-text {
+    text-decoration: underline;
+}
+
+
+.expand .if-expanded {
+    display: none !important;
+}
+
+.deflate .if-deflated {
+    display: none !important;
+}
+
+.btn .icon-next-text {
+    line-height: 11px;
+}
+
+
+/* GENERAL TYPOGRAPHY FOR CURRICULUM COLUMN */
+#curriculum_col p,
+#curriculum_col li,
+#curriculum_col span {
+    font-size: 14px !important;
+}
+
+#curriculum_col h1,
+#curriculum_col h2,
+#curriculum_col h3,
+#curriculum_col h4,
+#curriculum_col h5,
+#curriculum_col h6,
+#curriculum_col .h1,
+#curriculum_col .h2,
+#curriculum_col .h3,
+#curriculum_col .h4,
+#curriculum_col .h5,
+#curriculum_col .h6 {
+    font-family: "Source Sans Pro", sans-serif !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+    letter-spacing: normal !important;
+    text-decoration: inherit !important;
+    text-transform: inherit !important;
+    margin-top: 0 !important;
+    text-align: left !important;
+}
+
+#curriculum_col h1,
+#curriculum_col .h1 {
+    font-size: 32px !important;
+}
+
+#curriculum_col h2,
+#curriculum_col .h2 {
+    font-size: 28px !important;
+}
+
+#curriculum_col h3,
+#curriculum_col .h3 {
+    font-size: 24px !important;
+}
+
+#curriculum_col h4,
+#curriculum_col .h4 {
+    font-size: 20px !important;
+}
+
+#curriculum_col h5,
+#curriculum_col .h5 {
+    font-size: 16px !important;
+}
+
+#curriculum_col h6,
+#curriculum_col .h6 {
+    font-size: 14px !important;
+}
+
+#curriculum_col .lead {
+    font-size: 20px !important;
+}
+
+#curriculum_col table,
+#curriculum_content table,
+#build_curriculum table {
+    padding: 15px !important;
+    font-size: 14px !important;
+    background: #eeeeee !important;
+    color: #373A3C !important;
+    font-weight: 700 !important;
+    font-family: 'Source Code Pro',
+        monospace !important;
+    border: none !important;
+}
+
+#curriculum_col table p,
+#curriculum_content table p,
+#build_curriculum table p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#curriculum_col table p+*,
+#curriculum_content table p+*,
+#build_curriculum table p+* {
+    margin-top: 8px;
+}
+
+#curriculum_col ul,
+#curriculum_col ol {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.checkpoint_section {
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, .15);
+    border-radius: 7px;
+}
+
+.checkpoint_section>hr {
+    display: none;
+}
+
+#curriculum_col .checkpoint_section h1 {
+    font-size: 18px !important;
+    margin: 0 -15px 15px;
+    padding: 20px 15px 15px 15px;
+    /* border-bottom: 1px solid #F8F9FA; */
+
+}
+
+#curriculum_col .checkpoint_section h2 {
+    font-size: 16px !important;
+}
+
+#curriculum_col .checkpoint_section h3,
+#curriculum_col .checkpoint_section h4,
+#curriculum_col .checkpoint_section h5,
+#curriculum_col .checkpoint_section h6 {
+    font-size: 14px !important;
+
+}
+
+
+#curriculum_col .checkpoint_section {
+    padding: 0 15px 15px 15px;
+}
+
+/* FOR REQUIREMENTS */
+
+.requirements .requirement+.requirement {
+    margin-top: -1px;
+}
+
+.requirements .requirement {
+    border-radius: 0 !important;
+    position: relative;
+    padding-right: 40px !important;
+}
+
+.requirements .requirement:before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    height: 100%;
+    width: 36px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 12px;
+    color: #777777;
+}
+
+.requirements .requirement.complete:before,
+.requirements .requirement.completed:before {
+    content: "\f058";
+    color: #58c287;
+    font-weight: 900;
+}
+
+.requirements .requirement:first-child {
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.requirements .requirement:last-child {
+    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+/* END REQUIREMENTS */
+
+#curriculum_col .checkpoint_section .check_code {
+    background: none;
+    border: 2px solid #25434b;
+    color: #25434b;
+    border-radius: 4px !important;
+    margin-bottom: 15px;
+    font-size: 14px !important;
+}
+
+#curriculum_col .checkpoint_section .check_code:hover:not(:disabled),
+#curriculum_col .checkpoint_section .check_code:focus {
+    background: #25434b;
+    border: 2px solid #25434b;
+    color: #ffffff;
+    box-shadow: none !important;
+}
+
+#curriculum_col .checkpoint_section .quiz_button {
+    background: none;
+    border: none;
+    border-top: 1px solid #F8F9FA;
+    width: calc(100% + 30px);
+    color: #25434B;
+    border-radius: 4px !important;
+    margin: -1px -15px -15px;
+    font-size: 14px !important;
+    padding: 13px 15px !important;
+    text-align: left;
+    position: relative;
+}
+
+#curriculum_col .checkpoint_section .show_quiz:hover,
+#curriculum_col .checkpoint_section .show_quiz:focus {
+    background: #F8F9FA;
+    box-shadow: none !important;
+}
+
+.quiz_button::after {
+    content: "arrow_forward";
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    /* font-weight: 700; */
+    right: 0;
+    top: 0;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    /* display: inline-block; */
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.sections_list .locked {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* In modal */
+/* FOR CURRICULUM SECTIONS */
+.checkpoint.active,
+.challenge.active {
+    color: white !important;
+    background-color: #53B199;
+    border: none;
+}
+
+.checkpoint,
+.challenge {
+    color: #25434B !important;
+    cursor: pointer;
+}
+
+.checkpoint:hover:not(.active),
+.challenge:hover:not(.active) {
+    background-color: rgba(83, 177, 153, 0.3);
+}
+
+#pause {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(150, 150, 150, 0.5);
+    z-index: 1005;
+}
+
+#code_page_body .btn {
+    font-size: 14px;
+    border-width: 2px;
+}
+
+#code_page_body .btn .fas,
+#code_page_body .btn .fa,
+#code_page_body .btn .far {
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code_page_body .btn .fas:before,
+#code_page_body .btn .fa:before,
+#code_page_body .btn .far:before,
+#code_page_body .btn .fas:after,
+#code_page_body .btn .fa:after,
+#code_page_body .btn .far:after {
+    font-size: 20px;
+}
+
+#code_page_body .fa-angle-left:before {
+    content: "\f104";
+    font-size: 24px !important;
+}
+
+.btn.btn-link,
+.btn.btn-link:hover,
+.btn.btn-link:focus,
+.btn.btn-link:active {
+    text-decoration: none;
+    border: none;
+}
+
+.btn.btn-link:hover .btn-link-text,
+.btn.btn-link:focus .btn-link-text,
+.btn.btn-link:active .btn-link-text {
+    text-decoration: underline;
+}
+
+
+.expand .if-expanded {
+    display: none !important;
+}
+
+.deflate .if-deflated {
+    display: none !important;
+}
+
+.btn .icon-next-text {
+    line-height: 11px;
+}
+
+
+/* GENERAL TYPOGRAPHY FOR CURRICULUM COLUMN */
+#tourModal p,
+#tourModal li,
+#tourModal span {
+    font-size: 14px !important;
+}
+
+#tourModal h1,
+#tourModal h2,
+#tourModal h3,
+#tourModal h4,
+#tourModal h5,
+#tourModal h6,
+#tourModal .h1,
+#tourModal .h2,
+#tourModal .h3,
+#tourModal .h4,
+#tourModal .h5,
+#tourModal .h6 {
+    font-family: "Source Sans Pro", sans-serif !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+    letter-spacing: normal !important;
+    text-decoration: inherit !important;
+    text-transform: inherit !important;
+    margin-top: 0 !important;
+    text-align: left !important;
+}
+
+#tourModal h1,
+#tourModal .h1 {
+    font-size: 32px !important;
+}
+
+#tourModal h2,
+#tourModal .h2 {
+    font-size: 28px !important;
+}
+
+#tourModal h3,
+#tourModal .h3 {
+    font-size: 24px !important;
+}
+
+#tourModal h4,
+#tourModal .h4 {
+    font-size: 20px !important;
+}
+
+#tourModal h5,
+#tourModal .h5 {
+    font-size: 16px !important;
+}
+
+#tourModal h6,
+#tourModal .h6 {
+    font-size: 14px !important;
+}
+
+#tourModal .lead {
+    font-size: 20px !important;
+}
+
+#tourModal table,
+#curriculum_content table,
+#build_curriculum table {
+    padding: 15px !important;
+    font-size: 14px !important;
+    background: #eeeeee !important;
+    color: #373A3C !important;
+    font-weight: 700 !important;
+    font-family: 'Source Code Pro',
+        monospace !important;
+    border: none !important;
+}
+
+#tourModal table p,
+#curriculum_content table p,
+#build_curriculum table p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#tourModal table p+*,
+#curriculum_content table p+*,
+#build_curriculum table p+* {
+    margin-top: 8px;
+}
+
+#tourModal ul,
+#tourModal ol {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.checkpoint_section {
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, .15);
+    border-radius: 7px;
+}
+
+.checkpoint_section>hr {
+    display: none;
+}
+
+#tourModal .checkpoint_section h1 {
+    font-size: 18px !important;
+    margin: 0 -15px 15px;
+    padding: 20px 15px 15px 15px;
+    /* border-bottom: 1px solid #F8F9FA; */
+
+}
+
+#tourModal .checkpoint_section h2 {
+    font-size: 16px !important;
+}
+
+#tourModal .checkpoint_section h3,
+#tourModal .checkpoint_section h4,
+#tourModal .checkpoint_section h5,
+#tourModal .checkpoint_section h6 {
+    font-size: 14px !important;
+
+}
+
+
+#tourModal .checkpoint_section {
+    padding: 0 15px 15px 15px;
+}
+
+/* FOR REQUIREMENTS */
+
+.requirements .requirement+.requirement {
+    margin-top: -1px;
+}
+
+.requirements .requirement {
+    border-radius: 0 !important;
+    position: relative;
+    padding-right: 40px !important;
+}
+
+.requirements .requirement:before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    position: absolute;
+    height: 100%;
+    width: 36px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 12px;
+    color: #777777;
+}
+
+.requirements .requirement.complete:before,
+.requirements .requirement.completed:before {
+    content: "\f058";
+    color: #58c287;
+    font-weight: 900;
+}
+
+.requirements .requirement:first-child {
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.requirements .requirement:last-child {
+    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+/* END REQUIREMENTS */
+
+#tourModal .checkpoint_section .check_code {
+    background: none;
+    border: 2px solid #25434b;
+    color: #25434b;
+    border-radius: 4px !important;
+    margin-bottom: 15px;
+    font-size: 14px !important;
+}
+
+#tourModal .checkpoint_section .check_code:hover:not(:disabled),
+#tourModal .checkpoint_section .check_code:focus {
+    background: #25434b;
+    border: 2px solid #25434b;
+    color: #ffffff;
+    box-shadow: none !important;
+}
+
+#tourModal .checkpoint_section .quiz_button {
+    background: none;
+    border: none;
+    border-top: 1px solid #F8F9FA;
+    width: calc(100% + 30px);
+    color: #25434B;
+    border-radius: 4px !important;
+    margin: -1px -15px -15px;
+    font-size: 14px !important;
+    padding: 13px 15px !important;
+    text-align: left;
+    position: relative;
+}
+
+#tourModal .checkpoint_section .show_quiz:hover,
+#tourModal .checkpoint_section .show_quiz:focus {
+    background: #F8F9FA;
+    box-shadow: none !important;
+}
+
+.quiz_button::after {
+    content: "arrow_forward";
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    /* font-weight: 700; */
+    right: 0;
+    top: 0;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    /* display: inline-block; */
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.sections_list .locked {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.modal-x-left {
+    margin-left: 8px;
+    position: relative;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: slide-left;
+    -webkit-animation-duration: .4s;
+    -webkit-animation-timing-function: linear;
+    /* Standard syntax */
+    animation-name: slide-left;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slide-left {
+    0% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+#tourModal .close span {
+    font-size: 24px !important;
+}
+
+.tour-active>textarea {
+    opacity: 0;
+}
+
+.tour-active.btn {
+    min-height: 40px !important;
+}
+
+#tourWrap+.modal-backdrop {
+    pointer-events: none;
+}
+
+button.btn.mp-btn.mp-btn-tour.tour-active {
+    background: white;
+    margin-left: -8px;
+}
+
+button.btn.mp-btn.mp-btn-tour.tour-active span.btn-display {
+    background: black;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+
+}

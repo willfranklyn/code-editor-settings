@@ -1,0 +1,358 @@
+.card {
+  border-width: 2px; }
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; }
+
+.mp-load {
+  position: fixed;
+  top: 72px;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .mp-load .btn,
+  .mp-load .card {
+    border-radius: 6px !important; }
+
+.mp-outer {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.mp-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .mp-wrapper.vertical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.mp-pane {
+  min-width: 36px;
+  min-height: 36px !important; }
+
+.mp-wrapper.horizontal > .mp-pane {
+  min-height: 100% !important;
+  max-height: 100% !important; }
+
+.mp-wrapper.vertical > .mp-pane {
+  min-width: 100% !important;
+  max-width: 100% !important; }
+
+.mp-content {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.mp-wrapper .mp-btn {
+  min-width: 16px;
+  max-width: 16px;
+  width: 16px;
+  padding: 4px 6.5px;
+  position: relative;
+  cursor: ew-resize;
+  height: 100%; }
+  .mp-wrapper .mp-btn .btn-display {
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 6.5px;
+    right: 6.5px;
+    width: 1px;
+    height: 32px;
+    background: #F1F3F5;
+    -webkit-transition: .2s all linear !important;
+    -o-transition: .2s all linear !important;
+    transition: .2s all linear !important; }
+  .mp-wrapper .mp-btn:hover, .mp-wrapper .mp-btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .mp-wrapper .mp-btn:hover .btn-display, .mp-wrapper .mp-btn:focus .btn-display {
+      background: #666666;
+      -webkit-transition: .4s all linear !important;
+      -o-transition: .4s all linear !important;
+      transition: .4s all linear !important; }
+  .mp-wrapper .mp-btn:active .btn-display {
+    position: absolute;
+    display: block;
+    bottom: 4px;
+    left: 6px;
+    right: 6px;
+    width: 2px;
+    height: auto; }
+
+.content-in {
+  position: absolute;
+  top: -24px;
+  left: -16px;
+  right: -16px;
+  bottom: 24px;
+  pointer-events: none;
+  padding: 24px; }
+  .content-in * {
+    pointer-events: all; }
+
+.content-section {
+  padding: 0 0 8px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .content-section.content-header {
+    height: 48px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .content-section > .card {
+    margin-bottom: 8px; }
+    .content-section > .card:last-child {
+      margin-bottom: 0; }
+
+.CodeMirror {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; }
+
+.checkpoint.locked {
+  opacity: .5;
+  color: #dddddd;
+  pointer-events: none; }
+
+.CodeMirror-line {
+  background: white;
+  width: 100%;
+  max-width: 100%; }
+
+.content-header .btn-light,
+.content-header .btn-outline-light,
+.content-section .btn-light,
+.content-section .btn-outline-light {
+  height: 40px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .5rem 1rem;
+  color: #757575; }
+
+.editor-card {
+  height: 100%;
+  background: white; }
+  .editor-card tex .editor-input,
+  .editor-card .CodeMirror.CodeMirror-wrap {
+    height: 100%; }
+
+.CodeMirror-cursor {
+  width: 2px !important;
+  background: #757575 !important;
+  border: none !important; }
+
+.list-item-btn {
+  width: 100%;
+  height: 40px;
+  margin-right: 16px;
+  border: 1px solid #ffffff;
+  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
+  background: none;
+  outline: 0;
+  text-align: left;
+  padding: 4px 16px;
+  border-radius: 4px;
+  margin-bottom: 4px; }
+  .list-item-btn.list-item-btn-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    text-align: center; }
+  .list-item-btn:hover, .list-item-btn:focus {
+    background: #F1F3F5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0; }
+
+#dynamic_directory li.active button.file {
+  background: #F1F3F5;
+  pointer-events: none; }
+
+.checkpoint_section {
+  margin-top: 12px;
+  padding: 16px; }
+
+.collapse.raised {
+  border: none !important;
+  margin-bottom: 8px;
+  border-radius: 8px; }
+
+.scroll-card {
+  position: relative;
+  max-height: 70%;
+  padding-bottom: 48px;
+  border-radius: 8px; }
+  .scroll-card .scroll-card-inner {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    border-radius: 8px; }
+  .scroll-card .scroll-card-body {
+    padding: 16px; }
+  .scroll-card .scroll-card-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    overflow: hidden; }
+    .scroll-card .scroll-card-footer .btn {
+      padding: 11px 16px;
+      border-radius: 0 !important;
+      border-width: 0;
+      border-top: 1px solid #F1F3F5 !important; }
+      .scroll-card .scroll-card-footer .btn.btn-white:focus, .scroll-card .scroll-card-footer .btn.btn-white:hover {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        background: #F1F3F5;
+        border-width: 0 !important;
+        border-top: 1px solid #e7e7e7 !important; }
+      .scroll-card .scroll-card-footer .btn + .btn {
+        border-left: none; }
+
+.modal-dialog,
+.modal-content,
+.modal-header,
+.modal-footer {
+  border: none; }
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 16px; }
+
+.modal-header .close {
+  padding: 0;
+  padding-left: 12px;
+  margin: 0; }
+
+.modal-header h5 {
+  font-size: 18px; }
+
+.sections_list li.checkpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.white-space-ellipsis {
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 8px; }
+
+li#nav_curriculum {
+  display: none; }
+
+.modal-body,
+.modal-header,
+.modal-footer {
+  padding: 0 24px 24px 24px; }
+
+.modal-header {
+  padding-top: 20px; }
+
+.modal-footer {
+  padding-top: 36px;
+  padding-bottom: 32px; }
+
+.folder-container {
+  margin-bottom: 8px;
+  border: 1px solid #F1F3F5;
+  border-radius: 6px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer; }
+
+.folder-container .folder {
+  border-bottom: 1px solid #F1F3F5;
+  width: 100%;
+  margin: 0 0 -1px;
+  display: block;
+  padding: 8px 20px 8px 40px;
+  position: relative;
+  border: none !important;
+  border-bottom: 1px solid #F1F3F5 !important;
+  border-radius: 0 !important;
+  text-align: left; }
+
+.folder-container .folder:before {
+  display: block;
+  position: absolute;
+  content: "\f07b";
+  left: 14px;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500; }
+
+.folder-container .folder:hover:before,
+.folder-container .folder:focus:before {
+  font-weight: 900; }
+
+.folder-container .folder:hover,
+.folder-container .folder:focus {
+  background: #F1F3F5; }
+
+ul.contents {
+  padding: 12px 8px 8px 8px;
+  padding-left: 36px; }
+
+.folder-container .folder + ul {
+  display: block; }
+
+.folder-container .folder.closed + ul {
+  display: none; }
+
+#nav_curriculum {
+  display: none !important; }
